@@ -22,6 +22,17 @@
 
 ---
 
+## 🏗️ 빌드 및 배포
+- **배포는 GitHub Pages를 통해 진행하고 있습니다.**
+- 아래 명령어를 통해 빌드 및 즉시 배포가 가능합니다.
+```bash
+# 프로젝트 빌드 및 GitHub Pages 배포 
+# gh-pages Branch로 빌드 및 배포가 진행됩니다.
+npm run deploy
+```
+
+---
+
 ## 📚사용 라이브러리
 - **QR 코드 생성**
     - [qrcode](https://www.npmjs.com/package/qrcode)
