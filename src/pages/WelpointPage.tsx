@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import WelpointQrCodeBox from "../components/WelpointQrCodeBox.tsx";
-import apiClient from "../api/ApiClient.ts";
 import Layout from "../layouts/Layout.tsx";
 import {addDays, convertFormatYyyymmdd, getTodayFormatYyyymmdd, parseDateTypeYyyymmdd} from "../utils/dateUtil.ts";
 import WelpointAuthView from "../components/WelpointAuthView.tsx";
@@ -9,6 +8,7 @@ import {Loading} from "../components/Loading.tsx";
 import ErrorTemplate from "../components/ErrorTemplate.tsx";
 import ExclamationTriangle from "../assets/svg/ExclamationTriangle.tsx";
 import {WindowX} from "../assets/svg/Window-X.tsx";
+import bypassApiClient from "../api/BypassApiClient.ts";
 
 
 function WelpointPage() {
@@ -41,8 +41,8 @@ function WelpointPage() {
         /** URL에 담긴 key 복호화 진행 */
         const decryptKey = async () => {
             try {
-                const param = `decrypt?cipherText=${encryptedData}`;
-                const result = await apiClient.get(param);
+                const param = `welpoint/decrypt?cipherText=${encryptedData}`;
+                const result = await bypassApiClient.get(param);
                 const dateStr = result.data.date ?? "";
 
                 setPhone(result.data.phone ?? "");
