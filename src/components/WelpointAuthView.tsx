@@ -21,7 +21,7 @@ function WelpointAuthView({ authPhoneNum, setAuthPhoneNum, checkAuthByPhoneNum }
                 <p>✅ 연락처는 '-' 없이 숫자만 입력해주세요.</p>
                 <p>⚠️ 카카오 알림톡 발송일자로부터 3일까지만 접속 가능합니다.</p>
             </CalloutsBlock>
-            <div className="flex space-x-1.5">
+            <div className="flex flex-col justify-center space-y-1.5">
                 <Input
                     type="phone"
                     value={authPhoneNum}
