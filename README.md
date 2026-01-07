@@ -19,6 +19,11 @@
     - React (TypeScript)
     - Tailwind CSS
 
+## 🌏 개발 환경
+- node
+  - `v20` 혹은 그 이상의 버전
+- npm
+  - `v10` 혹은 그 이상의 버전
 
 ## 🏗️ 빌드 및 배포
 - **배포는 GitHub Pages를 통해 진행하고 있습니다.**
