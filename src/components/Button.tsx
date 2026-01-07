@@ -3,6 +3,12 @@ interface ButtonProps  {
     onClick: () => void;
 }
 
+/**
+ * 버튼 컴포넌트
+ * @param text 버튼명
+ * @param onClick 이벤트
+ * @constructor
+ */
 function Button({text, onClick} : ButtonProps) {
     return (
         <button

@@ -10,6 +10,18 @@ interface WelpointQrCodeBoxProps {
     expiredDate: string;
 }
 
+/**
+ * 웰포인트 QR코드 박스
+ *
+ * 아래와 같은 형식으로 랜더링
+ * [안내문]
+ * [QR코드]
+ * [다운로드버튼]
+ *
+ * @param cardNumber
+ * @param expiredDate
+ * @constructor
+ */
 function WelpointQrCodeBox({ cardNumber, expiredDate }: WelpointQrCodeBoxProps) {
     const [qrUrl, setQrUrl] = useState("");
 

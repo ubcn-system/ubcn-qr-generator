@@ -1,7 +1,7 @@
 /**
  * 파라미터로 전달받은 값을 QR코드로 출력하는 페이지
  *
- * URL 구조 : `/common/{문자열}`
+ * 접속 URL : `/common`
  */
 
 import Layout from "../layouts/Layout.tsx";

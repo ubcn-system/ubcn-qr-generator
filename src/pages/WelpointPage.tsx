@@ -86,6 +86,7 @@ function WelpointPage() {
      * 실제 렌더링 될 페이지
      */
     const renderContent = () => {
+        // switch 무조건 수행하도록 true 설정
         switch (true) {
             case isLoading: // 로딩 페이지
                 return <Loading isLoading={isLoading}/>;

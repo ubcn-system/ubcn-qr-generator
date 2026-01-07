@@ -8,6 +8,13 @@ interface ErrorTemplateProps {
     messages: string[];
 }
 
+/**
+ * 에러 페이지 템플릿
+ * @param icon
+ * @param title
+ * @param messages
+ * @constructor
+ */
 function ErrorTemplate({ icon, title, messages }: ErrorTemplateProps) {
     return (
         <Layout>

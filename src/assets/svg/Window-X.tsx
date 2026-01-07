@@ -1,5 +1,5 @@
 /**
- * 윈도우 X svg
+ * 윈도우 X 아이콘
  */
 export function WindowX() {
     return (

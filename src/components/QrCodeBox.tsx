@@ -7,6 +7,16 @@ interface QrCodeBoxProps {
     value: string;
 }
 
+/**
+ * common페이지 QR코드 박스
+ *
+ * 아래와 같이 랜더링
+ * [QR코드]
+ * [다운로드 버튼]
+ *
+ * @param value QR코드에 표기할 데이터값
+ * @constructor
+ */
 function QrCodeBox({ value }: QrCodeBoxProps) {
     const [qrUrl, setQrUrl] = useState("");
 

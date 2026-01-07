@@ -9,6 +9,13 @@ interface WelpointAuthViewProps {
     checkAuthByPhoneNum: () => void;
 }
 
+/**
+ * 웰포인트 QR인증 컴포넌트
+ * @param authPhoneNum
+ * @param setAuthPhoneNum
+ * @param checkAuthByPhoneNum
+ * @constructor
+ */
 function WelpointAuthView({ authPhoneNum, setAuthPhoneNum, checkAuthByPhoneNum }: WelpointAuthViewProps) {
     return (
         <div className="mt-20 flex flex-col items-center space-y-4">
